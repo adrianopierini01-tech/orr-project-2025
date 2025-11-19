@@ -1,0 +1,89 @@
+output-file     = energy_levels.pdf
+width           = 8
+height          = 5
+energy-units    = $\Delta$G  eV
+energy range      = -2,6
+font size       = 10
+
+#-------  Path 1 ----------
+
+{
+    name        = o2
+    text-colour = black
+    label       = 1/2O$_2$ + 4(H$^+$ + e$^-$)
+    energy      = <complete>
+    labelColour = black
+    linksto     = pt-ooh:black, metal-ooh:red
+    column      = 1
+}
+
+{
+    name        = pt-ooh
+    text-colour = black
+    label       = OOH* + 3(H$^+$ + e$^-$)
+    energy      = <complete>
+    labelColour = black
+    linksto     = pt-o:black
+    column      = 2
+    legend      = Pt
+}
+
+{
+    name        = metal-ooh
+    text-colour = red
+    label       =
+    energy      = <complete>
+    labelColour = red
+    linksto     = metal-o:red
+    column      = 2
+    legend      = Au
+}
+
+{
+    name        = pt-o
+    text-colour = black
+    label       = O* + 2(H$^+$ + e$^-$)
+    energy      = <complete>
+    labelColour = black
+    linksto     = pt-oh:black
+    column      = 3
+}
+
+{
+    name        = metal-o
+    text-colour = red
+    label       =
+    energy      = <complete>
+    labelColour = red
+    linksto     = metal-oh:red
+    column      = 3
+}
+
+{
+    name        = pt-oh
+    text-colour = black
+    label       = OH* + (H$^+$ + e$^-$)
+    energy      = <complete>
+    labelColour = black
+    linksto     = h2o:black
+    column      = 4
+}
+
+{
+    name        = metal-oh
+    text-colour = red
+    label       =
+    energy      = <complete>
+    labelColour = red
+    linksto     = water:red
+    column      = 4
+}
+
+{
+    name        = h2o
+    text-colour = black
+    label       = H$_2$O
+    energy      = 0.000
+    labelColour = black
+    column      = 5
+}
