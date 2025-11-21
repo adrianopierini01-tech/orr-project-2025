@@ -37,7 +37,7 @@ def read_energy_file(filename):
             data[label] = float(val)
     return data
 
-data_OH = read_energy_file(file_I2)
+data_OH = read_energy_file(file_OH)
 data_slab = read_energy_file(file_slab)
 
 # Ensure both files contain the same labels
@@ -55,7 +55,7 @@ with open(file_output, "w") as f:
         E_OH = data_OH[label]
         E_slab= data_slab[label]
 
-        Eads = delta_Eads(E_slab, E_I2)
+        Eads = delta_Eads(E_slab, E_OH)
 
         f.write(f"{label}\t{Eads:.6f}\n")
 
