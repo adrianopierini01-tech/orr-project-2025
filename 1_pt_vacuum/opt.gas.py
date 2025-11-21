@@ -18,7 +18,7 @@ with open(outfile, "w") as f:
         print(f"\n=== Optimizing {mol} in gas-phase ===")
     
         # Create the molecule
-        xyz_path = "./molecules/"+molecule+".xyz"
+        xyz_path = "./molecules/"+mol+".xyz"
         ... # HINT # read molecule
     
         # Associate the calculator

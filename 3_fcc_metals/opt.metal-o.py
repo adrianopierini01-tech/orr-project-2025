@@ -4,7 +4,7 @@ from ase.constraints import FixAtoms
 from fairchem.core import pretrained_mlip, FAIRChemCalculator
 
 # -------- Settings --------
-metals = ["Ag","Au","Cu","Ir","Ni","Pt","Pd","Rh"]
+metals = ["Ag","Au","Cu","Ir","Pt","Pd","Rh"]
 adsorbate = "O"
 ads_height = 2.0
 ads_site = "fcc"
